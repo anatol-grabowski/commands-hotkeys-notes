@@ -54,6 +54,12 @@ killall <proc_name>
 renice <new_priority> <PID>
 service <service-name> status
 service <service-name> start|stop|restart
+   
+ll /var/lib/mlocate
+sudo updatedb
+locate *dir/*.ext
+
+time sudo grep -Rl "/nvm" ~ # find files that have '/nvm' string inside in ~ directory
 
 alias
 alias echopath='echo $PATH | tr ":" "\n" | nl'
