@@ -55,6 +55,14 @@ renice <new_priority> <PID>
 service <service-name> status
 service <service-name> start|stop|restart
 
+alias
+alias echopath='echo $PATH | tr ":" "\n" | nl'
+unalias echopath
+echo alias echopath='echo $PATH | tr ":" "\n" | nl' >> ~/.bashrc
+
+source 'vars.env' & bash 'scriptname.sh'
+(. vars.env & ./scriptname.sh)
+
 
 lspci
 lsusb
