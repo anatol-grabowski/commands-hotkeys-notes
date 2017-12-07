@@ -1,7 +1,7 @@
 `pwd`<br>
 `ls -la` - list files/dirs in cwd, one per line, including hidden, . and ..<br>
-du -b <file> // disk usage (apparent size in bytes)
-cat <file> // print file content
+`du -b <file>` disk usage (apparent size in bytes)
+`cat <file>` print file content
 cd <dir>
 mkdir <new_dir>
 mkdir -p <new_dir> // create parent dir(s) if needed
