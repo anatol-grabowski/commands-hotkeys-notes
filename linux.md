@@ -1,8 +1,8 @@
 `pwd`<br>
 `ls -la` - list files/dirs in cwd, one per line, including hidden, . and ..<br>
 `du -b <file>` disk usage (apparent size in bytes)<br>
-`cat <file>` print file content
-`cd <dir>`
+`cat <file>` print file content<br>
+`cd <dir>`<br>
 mkdir <new_dir>
 mkdir -p <new_dir> // create parent dir(s) if needed
 rmdir <dir_name>
@@ -71,6 +71,9 @@ echo 'alias echopath='\''echo $PATH | tr ":" "\n" | nl'\' >> ~/.bashrc
 source 'vars.env' & bash 'scriptname.sh'
 (. vars.env & ./scriptname.sh)
 
+curl -O https://fastdl.mongodb.org/linux/$mongo_version$file_extension # write output to file named as remote resource
+tar -zxvf $mongo_version$file_extension # tar, extract, verbose (list files), from file
+ln $mongo_version/bin/* ~/bin/ # make links to executable files
 
 lspci
 lsusb
