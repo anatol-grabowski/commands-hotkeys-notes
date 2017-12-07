@@ -1,8 +1,8 @@
 `pwd`<br>
 `ls -la` - list files/dirs in cwd, one per line, including hidden, . and ..<br>
-`du -b <file>` disk usage (apparent size in bytes)
+`du -b <file>` disk usage (apparent size in bytes)<br>
 `cat <file>` print file content
-cd <dir>
+`cd <dir>`
 mkdir <new_dir>
 mkdir -p <new_dir> // create parent dir(s) if needed
 rmdir <dir_name>
@@ -16,9 +16,9 @@ whatis <glob>
 whereis <glob> // related src, bin, man
 which <glob> // executable file
 echo $PATH | tr ":" "\n" | nl
-`chown <username> <dirpath>`
-chmod +x <filename> // make file executable
-
+`chown <username> <dirpath>`<br>
+`chmod +x <filename>` make file executable<br>
+```
    user   group  others
    r w x  r w x  r w x
 
@@ -35,6 +35,7 @@ app_mode     0666   rw- rw- rw-
 umask        0002   000 000 0-0
 app & ~umask __________________
 file_mode    0664   rw- rw- r-- 
+```
 
 umask
 groups
