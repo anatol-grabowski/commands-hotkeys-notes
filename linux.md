@@ -1,5 +1,5 @@
-pwd
-ls -la // list files/dirs in cwd, one per line, including hidden, . and ..
+`pwd`<br>
+`ls -la` - list files/dirs in cwd, one per line, including hidden, . and ..<br>
 du -b <file> // disk usage (apparent size in bytes)
 cat <file> // print file content
 cd <dir>
@@ -16,6 +16,7 @@ whatis <glob>
 whereis <glob> // related src, bin, man
 which <glob> // executable file
 echo $PATH | tr ":" "\n" | nl
+`chown <username> <dirpath>`
 chmod +x <filename> // make file executable
 
    user   group  others
