@@ -1,10 +1,10 @@
-sudo service mongodb [start|stop|restart|status] // Linux
-mongod --dbpath "d:\set up\mongodb\data" // windows
-mongod --dbpath /path/to/your/db --shutdown
-mongodump --host <HOST=127.0.0.1> --port <PORT=27017>
+`sudo service mongodb [start|stop|restart|status]` // Linux<br>
+`mongod --dbpath "d:\set up\mongodb\data"` // windows<br>
+`mongod --dbpath /path/to/your/db --shutdown`<br>
+`mongodump --host <HOST=127.0.0.1> --port <PORT=27017>
 --dbpath <DB_PATH> --out <BACKUP_DIR=./dump>
---dbname <DB_NAME> --collection <COLL_NAME>
-mongorestore
+--dbname <DB_NAME> --collection <COLL_NAME>`<br>
+`mongorestore`<br>
 mongostat
 mongotop <UPDATE_INTERVAL_SECONDS=1>
 mongo
