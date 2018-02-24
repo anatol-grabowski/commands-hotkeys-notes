@@ -3,19 +3,19 @@
 `du -b <file>` disk usage (apparent size in bytes)<br>
 `cat <file>` print file content<br>
 `cd <dir>`<br>
-mkdir <new_dir>
-mkdir -p <new_dir> // create parent dir(s) if needed
-rmdir <dir_name>
-mv <src> <dest>
-cp <src> <dest>
-rm <file|empty_dir>
-rm -rf <file|dir> // recursive, force
-link <filename> <new_hardlink_name>
-ln -s <filename> <symlink>
-whatis <glob>
-whereis <glob> // related src, bin, man
-which <glob> // executable file
-echo $PATH | tr ":" "\n" | nl
+`mkdir <new_dir>`<br>
+`mkdir -p <new_dir>` - create parent dir(s) if needed<br>
+`rmdir <dir_name>`<br>
+`mv <src> <dest>`<br>
+`cp <src> <dest>`<br>
+`rm <file|empty_dir>`<br>
+`rm -rf <file|dir>` - recursive, force<br>
+`link <filename> <new_hardlink_name>`<br>
+`ln -s <filename> <symlink>`<br>
+`whatis <glob>`<br>
+`whereis <glob>` - related src, bin, man<br>
+`which <glob>` - executable file<br>
+`echo $PATH | tr ":" "\n" | nl`<br>
 `chown <username> <dirpath>`<br>
 `chmod +x <filename>` make file executable<br>
 ```
@@ -37,18 +37,21 @@ app & ~umask __________________
 file_mode    0664   rw- rw- r-- 
 ```
 
-umask
-groups
-groupadd <group>
-usermod -aG <group> <username> // add user ($USER for current user) to group
-gpasswd -d <username> <group> // remove user from group
-gnome-session-quit
+`umask`<br>
+`groups`<br>
+`groupadd <group>`<br>
+`usermod -aG <group> <username>` - add user ($USER for current user) to group<br>
+`gpasswd -d <username> <group>` - remove user from group<br>
+`gnome-session-quit`<br>
 
-`<command> &` - run the command in the background
-`Ctrl + z` - stop current process and bring it to the background
-`jobs` - list all running jobs in current session
-`fg <job#>` - bring the job to the foreground
-`bg <job#>` - continue the job in the background
+`<command> &` - run the command in the background<br>
+`Ctrl + z` - stop current process and bring it to the background<br>
+`jobs` - list all running jobs in current session<br>
+`fg <job#>` - bring the job to the foreground<br>
+`bg <job#>` - continue the job in the background<br>
+
+`tee`<br>
+`tail -n0 -f <filename>` - follow appends to the file<br>
 
 whoami
 lsb_release -cs // show release name (xenial, zesty, etc.)
