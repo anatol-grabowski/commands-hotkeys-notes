@@ -44,12 +44,19 @@ usermod -aG <group> <username> // add user ($USER for current user) to group
 gpasswd -d <username> <group> // remove user from group
 gnome-session-quit
 
+`<command> &` - run the command in the background
+`Ctrl + z` - stop current process and bring it to the background
+`jobs` - list all running jobs in current session
+`fg <job#>` - bring the job to the foreground
+`bg <job#>` - continue the job in the background
+
 whoami
 lsb_release -cs // show release name (xenial, zesty, etc.)
 top // list processes
 ps -A
 pstree
 kill <PID>
+kill -9 <PID>
 pgrep <search_term> // grep PID from ps -A
 pkill <proc_name>
 killall <proc_name>
