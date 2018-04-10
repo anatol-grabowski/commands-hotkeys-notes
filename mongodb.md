@@ -4,7 +4,7 @@
 `mongodump --host <HOST=127.0.0.1> --port <PORT=27017>
 --dbpath <DB_PATH> --out <BACKUP_DIR=./dump>
 --dbname <DB_NAME> --collection <COLL_NAME>`<br>
-`mongorestore`<br>
+`mongorestore -c collection --db dbname --host localhost`<br>
 mongostat
 mongotop <UPDATE_INTERVAL_SECONDS=1>
 mongo
