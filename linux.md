@@ -52,6 +52,7 @@ file_mode    0664   rw- rw- r--
 
 `tee`<br>
 `tail -n0 -f <filename>` - follow appends to the file<br>
+`ls *.bson | xargs -I{} mongorestore {}` - restore each .bson
 
 whoami
 lsb_release -cs // show release name (xenial, zesty, etc.)
