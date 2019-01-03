@@ -65,10 +65,10 @@ git merge <branch> // merge changes from branch to current branch
 git merge <br> --no-ff -m <message> // non fast-forward merge, create commit for merging
 git merge --no-ff --no-commit <to_branch> // test for conflicts, don't do real merge
 
-git rebase <branch> // apply changes from current branch to branch
-git rebase --onto master server client // “Take the client branch, figure out the patches since it diverged from the server branch, and replay these patches in the client branch as if it was based directly off the master branch instead.”
+`git rebase <branch>` // apply changes from current branch to branch<br>
+`git rebase --onto master server client` // “Take the client branch, figure out the patches since it diverged from the server branch, and replay these patches in the client branch as if it was based directly off the master branch instead.”<br>
 
-git cherry-pick <commit> // apply changes from commit to current branch
+git cherry-pick <commit> // apply changes from commit to current branch<br>
 
 git checkout <branch_name || commit_name || tag_name> // set state as if right after commit
 git checkout <commit> -- <file> // revert single file
