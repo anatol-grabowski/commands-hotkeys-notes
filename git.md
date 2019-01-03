@@ -1,6 +1,6 @@
-﻿git config -l, --list // list config options from system, global and local config files
-git config -l --show-origin
-git config --global user.name "username" // set user.name in $HOME/.gitconfig
+`git config -l, --list` // list config options from system, global and local config files
+`git config -l --show-origin`
+`git config --global user.name "username"` // set user.name in $HOME/.gitconfig
 git config --system user.email email@mail.com // set user.email in git/mingw/etc/gitconfig
 git config --system --unset user.email // unset user.email in git/mingw/etc/gitconfig
 git config --system --remove-section user
